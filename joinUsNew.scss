@@ -1,0 +1,122 @@
+body {
+  //font-family: National2, Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #2b3b4c;
+  font-weight: 300;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 300;
+  }
+
+  h1 {
+    margin: 49px 0 40px 0;
+    font-weight: 300;
+    color: rgb(63, 81, 181)
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+  .container {
+    //margin: 0;
+    //padding: 0;
+  }
+  .btn {
+    background-color: #0d3a6b !important;
+    border-color: #064a94 !important;
+    color: white;
+
+  }
+  .btn-primary {
+    background-color: #0d3a6b !important;
+    border-color: #0c5eb7 !important;
+  }
+
+  .mainWrapper {
+    .inputWrapper {
+      position: relative;
+      margin: 20px 0 35px 0;
+
+    }
+
+    input {
+      padding: 10px;
+      z-index: 100;
+      position: relative;
+      background-color: transparent;
+    }
+
+    .label {
+      position: absolute;
+      top: 11px;
+      color: #86898c;
+      left: 10px;
+      z-index: 90;
+      font-weight: 200;
+      transition: all 0.1s ease;
+    }
+
+    input:focus ~ .label {
+      display: block;
+      color: #2b3b4c;
+      top: -21px;
+      font-size: 12px;
+    }
+
+
+
+  }
+  .advancedAddressSearch {
+    h4 {
+      margin-bottom: 2.8rem;
+    }
+  }
+
+  .submitButtonWrapper {
+    text-align: center;
+    button {
+      padding: 7px 55px;
+    }
+  }
+  .yesNoRadioWrapper div {
+    display: inline-block;
+  }
+  .bottomMargin {
+    margin-bottom: 50px;
+  }
+  .advancedLinkWrapper {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 13px;
+    a {
+      color: rgb(63, 81, 181);
+      font-weight: 200;
+    }
+  }
+  .price {
+    font-size: 30px;
+    color: #f88600e0;
+    margin-bottom: 20px;
+  }
+  .step {
+    height: 100vh;
+  }
+  .section {
+    height: 100vh;
+  }
+  .modal {
+    z-index: 10000000;
+  }
+  .situationWrapper {
+    h5 {
+      margin-bottom: 40px;
+    }
+    div {
+      margin-bottom: 20px;
+    }
+  }
+}

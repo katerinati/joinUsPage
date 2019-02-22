@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="joinUsNew.css">
+  <title>Join Us</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+
+    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3  mainWrapper" id="fullpage">
+
+      <div class=" simpleAddressSearch bottomMargin section ">
+        <h1>Join now and start saving</h1>
+        <div class="inputWrapper">
+        <input type="text" data-provide="typeahead" class="form-control" id="typeahead"
+               required/>
+        <span class="label">Your address</span>
+        </div>
+        <div class="advancedLinkWrapper">
+          <a id='advancedSearchToggle' href="#" data-toggle="modal" data-target="#advancedSearch"
+             role="button" aria-expanded="false">Advanced Search</a>
+
+          <div class="modal fade" id="advancedSearch" tabindex="-1" role="dialog"
+               aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Advanced Search</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="advancedAddressSearch bottomMargin ">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="inputWrapper">
+                          <input type="text" class="form-control" required/>
+                          <span class="label">Unit</span>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="inputWrapper">
+                          <input type="text" class="form-control" required/>
+                          <span class="label">Street Number</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="inputWrapper">
+                      <input type="text" class="form-control" required/>
+                      <span class="label">Street Name</span>
+                    </div>
+                    <div class="inputWrapper">
+                      <input type="text" class="form-control" required/>
+                      <span class="label">Suburb</span>
+                    </div>
+                    <div class="inputWrapper">
+                      <input type="text" class="form-control" required/>
+                      <span class="label">City</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="situationWrapper bottomMargin section mainview" vs-anchor="2view">
+        <h5>What's the situation at 5 THE DRIVE, EPSOM, AUCKLAND 1023?</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="checkBox1">
+          <label class="form-check-label" for="checkBox1">
+            I already have a power company here and want to switch to Lighthouse
+          </label>
+        </div>
+        <div class="form-check">
+
+          <input class="form-check-input" type="checkbox" value="" id="checkBox2">
+          <label class="form-check-label" for="checkBox2">
+            I'm moving in, or I've just moved
+          </label>
+        </div>
+      </div>
+
+      <div class="planWrapper bottomMargin section mainview" vs-anchor="3view">
+        <h4>Choose the plan that fits your requirements</h4>
+        <p class="subtitle">Pay monthly, with no hidden costs or surprises. Cancel your plan at any time with one
+          month's notice.</p>
+        <div class="row">
+
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <p>BETA TESTING STANDARD</p>
+                <div class="price">
+                  $10/Month
+                </div>
+                <p>
+                  Pay Membership fee upfront
+                  Great for medium to heavy power users
+                  Pay wholesale cost price for your power and line charges
+                </p>
+              </div>
+              <button class="btn btn-primary">Start</button>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+
+              <p>BETA TESTING LOW USAGE</p>
+              <div class="price">
+                $0.0125/kWh
+              </div>
+              <p>
+                No upfront Membership Fee
+                Great for low power users
+                Pay wholesale cost price plus the lighthouse fee above per KWH used
+              </p>
+              </div>
+              <button class="btn btn-primary">Start</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="personalInfoWrapper bottomMargin section">
+        <h4 class="userPersonalInfo ">Tell us a little bit of you</h4>
+        <div class="row">
+          <div class="col-2">
+            <div class="inputWrapper">
+              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                <option selected>Empty</option>
+                <option value="1">Mr</option>
+                <option value="2">Mrs</option>
+                <option value="3">Miss</option>
+                <option value="Ms">Ms</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="inputWrapper">
+              <input type="text" class="form-control" required/>
+              <span class="label">First Name</span>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="inputWrapper">
+              <input type="text" class="form-control" required/>
+              <span class="label">Last Name</span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="inputWrapper">
+          <input type="text" class="form-control" required/>
+          <span class="label">Email address</span>
+        </div>
+
+        <p>Is someone at 5 THE DRIVE, EPSOM, AUCKLAND 1023 medically dependent on electricity?</p>
+        <div class="yesNoRadioWrapper">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="yesRadio" id="yesRadio" value="option1" checked>
+            <label class="form-check-label" for="yesRadio">
+              Yes
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="yesRadio" id="noRadio" value="option1" checked>
+            <label class="form-check-label" for="noRadio">
+              No
+            </label>
+          </div>
+        </div>
+        <div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="creditCheckbox">
+            <label class="form-check-label" for="creditCheckbox">
+              I’m ok with you credit checking me*
+            </label>
+          </div>
+        </div>
+        <div>
+          <div class="form-check">
+
+            <input class="form-check-input" type="checkbox" value="" id="tcCheckbox">
+            <label class="form-check-label" for="tcCheckbox">
+              I accept the Terms & Conditions of being a Lighthouse customer*
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="phoneNumberWrapper bottomMargin section">
+        <p>Please enter your phone number</p>
+        <div class="inputWrapper">
+          <input type="tel" class="form-control" required/>
+          <span class="label">Phone number</span>
+        </div>
+        <div class="inputWrapper">
+          <input type="tel" class="form-control" required/>
+          <span class="label">Password</span>
+        </div>
+        <div class="inputWrapper">
+          <input type="tel" class="form-control" required/>
+          <span class="label">Confirm Password</span>
+        </div>
+        <button class="btn btn-primary btn-lg submitButton">Submit</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+
+<script src="./JoinUsNew.js" type="text/javascript">
+</script>
+</body>
+</html>
