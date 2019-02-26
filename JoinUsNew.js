@@ -93,16 +93,35 @@ $(".calendar").datepicker({
   autoClose: true
 
 });
-$(".mainInput").change(function () {
-  $(".addressLabel").addClass("forInputChange");
+$(".forChangeInput").change(function () {
+  $(this).next().addClass("forInputChange");
 })
 $(".saveButton").click(function () {
   $(".simpleAddressSearch .nextButton").removeAttr("disabled");
 })
 
 
-$(".firstName").change(function () {
-  if (".firstName".length >= 3 && ".lastName".length >= 3) {
+
+
+
+$(".personalInfoForm input").on("change", function () {
+  if($(".firstName").val().length >=3 &&
+    $(".lastName").val().length >=3 &&
+    $(".emailAddress").val().includes("@") &&
+    $("[name=medically]:checked").length > 0 &&
+    $(".personalInfoWrapper .form-check-input")[0].checked &&
+    $(".personalInfoWrapper .form-check-input2")[0].checked) {
     $(".personalInfoWrapper .nextButton").removeAttr("disabled");
   }
+})
+$(".phoneNumberInput").keypress(function () {
+  if($(this).val().length == 9) {
+    $(".verificationWrapper").removeClass("hidden");
+  }
+})
+$(".verificationButton").click(function () {
+  $(".loaderWrapper").removeClass("hidden");
+  setTimeout(function () {
+    $(".loaderWrapper").addClass("hidden");
+  }, 2000)
 })

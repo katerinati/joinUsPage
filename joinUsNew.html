@@ -20,9 +20,9 @@
       <div class=" simpleAddressSearch bottomMargin section ">
         <h1>Join now and start saving</h1>
         <div class="inputWrapper">
-          <input type="text" data-provide="typeahead" class="form-control mainInput" id="typeahead"
+          <input type="text" data-provide="typeahead" class="form-control forChangeInput" id="typeahead"
                  required/>
-          <span class="label addressLabel">Your address</span>
+          <span class="label forChangeLabel">Your address</span>
         </div>
         <div class="advancedLinkWrapper">
           <a id='advancedSearchToggle' href="#advancedSearch" aria-expanded="false" aria-controls="advancedSearch"
@@ -48,29 +48,29 @@
                     <div class="row">
                       <div class="col-6">
                         <div class="inputWrapper">
-                          <input type="text" class="form-control" required/>
-                          <span class="label">Unit</span>
+                          <input type="text" class="form-control forChangeInput" required/>
+                          <span class="label forChangeLabel">Unit</span>
                         </div>
                       </div>
                       <div class="col-6">
                         <div class="inputWrapper">
-                          <input type="text" class="form-control" required/>
-                          <span class="label">Street Number</span>
+                          <input type="text" class="form-control forChangeInput" required/>
+                          <span class="label forChangeLabel">Street Number</span>
                         </div>
                       </div>
                     </div>
 
                     <div class="inputWrapper">
-                      <input type="text" class="form-control" required/>
-                      <span class="label">Street Name</span>
+                      <input type="text" class="form-control forChangeInput" required/>
+                      <span class="label forChangeLabel">Street Name</span>
                     </div>
                     <div class="inputWrapper">
-                      <input type="text" class="form-control" required/>
-                      <span class="label">Suburb</span>
+                      <input type="text" class="form-control forChangeInput" required/>
+                      <span class="label forChangeLabel">Suburb</span>
                     </div>
                     <div class="inputWrapper">
-                      <input type="text" class="form-control" required/>
-                      <span class="label">City</span>
+                      <input type="text" class="form-control forChangeInput" required/>
+                      <span class="label forChangeLabel">City</span>
                     </div>
                   </div>
                 </div>
@@ -130,38 +130,38 @@
         <div class="row">
 
           <div class="col-6">
-              <div class="card">
-                <div class="card-body">
-                  <p>BETA TESTING STANDARD</p>
-                  <div class="price">
-                    $10/Month
-                  </div>
-                  <p>
-                    Pay Membership fee upfront
-                    Great for medium to heavy power users
-                    Pay wholesale cost price for your power and line charges
-                  </p>
+            <div class="card">
+              <div class="card-body">
+                <p>BETA TESTING STANDARD</p>
+                <div class="price">
+                  $10/Month
                 </div>
+                <p>
+                  Pay Membership fee upfront
+                  Great for medium to heavy power users
+                  Pay wholesale cost price for your power and line charges
+                </p>
               </div>
+            </div>
 
 
           </div>
 
           <div class="col-6">
-              <div class="card">
-                <div class="card-body">
+            <div class="card">
+              <div class="card-body">
 
-                  <p>BETA TESTING LOW USAGE</p>
-                  <div class="price">
-                    $0.0125/kWh
-                  </div>
-                  <p>
-                    No upfront Membership Fee
-                    Great for low power users
-                    Pay wholesale cost price plus the lighthouse fee above per KWH used
-                  </p>
+                <p>BETA TESTING LOW USAGE</p>
+                <div class="price">
+                  $0.0125/kWh
                 </div>
+                <p>
+                  No upfront Membership Fee
+                  Great for low power users
+                  Pay wholesale cost price plus the lighthouse fee above per KWH used
+                </p>
               </div>
+            </div>
 
 
           </div>
@@ -173,82 +173,98 @@
       </div>
 
       <div class="personalInfoWrapper bottomMargin section disabledStyle">
-        <h4 class="userPersonalInfo ">Tell us a little bit of you</h4>
-        <div class="row">
-          <div class="col-2">
-            <div class="inputWrapper">
-              <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Empty</option>
-                <option value="1">Mr</option>
-                <option value="2">Mrs</option>
-                <option value="3">Miss</option>
-                <option value="Ms">Ms</option>
-              </select>
+        <form class="personalInfoForm">
+          <h4 class="userPersonalInfo ">Tell us a little bit of you</h4>
+          <div class="row">
+            <div class="col-2">
+              <div class="inputWrapper">
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Empty</option>
+                  <option value="1">Mr</option>
+                  <option value="2">Mrs</option>
+                  <option value="3">Miss</option>
+                  <option value="Ms">Ms</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="inputWrapper">
+                <input type="text" class="form-control firstName forChangeInput" required/>
+                <span class="label forChangeLabel">First Name</span>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="inputWrapper">
+                <input type="text" class="form-control lastName forChangeInput" required/>
+                <span class="label forChangeLabel">Last Name</span>
+              </div>
             </div>
           </div>
-          <div class="col-5">
-            <div class="inputWrapper">
-              <input type="text" class="form-control firstName" required/>
-              <span class="label">First Name</span>
-            </div>
+
+
+          <div class="inputWrapper">
+            <input type="email" class="form-control emailAddress forChangeInput" required/>
+            <span class="label forChangeLabel">Email address</span>
           </div>
-          <div class="col-5">
-            <div class="inputWrapper">
-              <input type="text" class="form-control lastName" required/>
-              <span class="label">Last Name</span>
-            </div>
+
+          <p>Is someone at <span class="dataAddress"></span> medically dependent on electricity?</p>
+
+          <div class="inputGroup">
+            <input id="option3" name="medically" class="form-check-input" type="radio" required>
+            <label for="option3">
+              Yes
+            </label>
           </div>
-        </div>
+          <div class="inputGroup">
+            <input id="option4" name="medically" class="form-check-input" type="radio" required>
+            <label for="option4">
+              No
+            </label>
+          </div>
 
+          <div class="inputGroup">
+            <input id="option5"  class="form-check-input" type="checkbox" required>
+            <label for="option5">
+              I’m ok with you credit checking me*
+            </label>
+          </div>
 
-        <div class="inputWrapper">
-          <input type="email" class="form-control emailAddress" required/>
-          <span class="label">Email address</span>
-        </div>
-
-        <p>Is someone at <span class="dataAddress"></span> medically dependent on electricity?</p>
-
-        <div class="inputGroup">
-          <input id="option3" name="option1" class="form-check-input" type="radio">
-          <label for="option3">
-            Yes
-          </label>
-        </div>
-        <div class="inputGroup">
-          <input id="option4" name="option1" class="form-check-input" type="radio">
-          <label for="option4">
-            No
-          </label>
-        </div>
-
-        <div class="inputGroup">
-          <input id="option5" name="option1" class="form-check-input" type="checkbox">
-          <label for="option5">
-            I’m ok with you credit checking me*
-          </label>
-        </div>
-
-        <div class="inputGroup">
-          <input id="option6" name="option1" class="form-check-input" type="checkbox">
-          <label for="option6">
-            I accept the Terms & Conditions of being a Lighthouse customer*
-          </label>
-        </div>
-        <div class="successButtonWrapper">
-          <button class="nextButton" disabled>Next</button>
-        </div>
+          <div class="inputGroup">
+            <input id="option6"  class="form-check-input2" type="checkbox" required>
+            <label for="option6">
+              I accept the Terms & Conditions of being a Lighthouse customer*
+            </label>
+          </div>
+          <div class="successButtonWrapper">
+            <button class="nextButton" disabled>Next</button>
+          </div>
+        </form>
       </div>
 
       <div class="phoneNumberWrapper bottomMargin section disabledStyle">
         <p>Please enter your phone number</p>
         <div class="inputWrapper">
-          <input type="tel" class="form-control" required/>
-          <span class="label">Phone number</span>
+          <input type="tel" class="form-control forChangeInput phoneNumberInput" required/>
+          <span class="label forChangeLabel">Phone number</span>
         </div>
+        <div class="verificationWrapper hidden">
         <p>For us it is important to have your correct phone number
           to have a better communication with you. <br>So please verify your phone number</p>
-        <button class="btn btn-success">Send verification code</button>
-        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <button class="btn btn-success verificationButton">Send verification code</button>
+        <div class="loaderWrapper hidden">
+          <div class="lds-roller ">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        </div>
+        </div>
+        <div class="passwordWrapper hidden">
         <div class="inputWrapper">
           <input type="tel" class="form-control" required/>
           <span class="label">Password</span>
@@ -258,6 +274,7 @@
           <span class="label">Confirm Password</span>
         </div>
         <button class="btn btn-primary btn-lg submitButton" disabled>Submit</button>
+        </div>
       </div>
 
     </div>
@@ -277,6 +294,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
 <script src="./datepicker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 

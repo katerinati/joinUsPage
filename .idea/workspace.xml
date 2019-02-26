@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76c5d0b8-b4f4-4ef5-bfa7-33bbbf9f2592" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datepicker.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JoinUsNew.js" afterPath="$PROJECT_DIR$/JoinUsNew.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joinUsNew.css" afterPath="$PROJECT_DIR$/joinUsNew.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joinUsNew.css.map" afterPath="$PROJECT_DIR$/joinUsNew.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joinUsNew.html" afterPath="$PROJECT_DIR$/joinUsNew.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joinUsNew.scss" afterPath="$PROJECT_DIR$/joinUsNew.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,21 +19,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="joinUsNew.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="joinUsNew.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/joinUsNew.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="158">
+              <caret line="253" column="40" lean-forward="false" selection-start-line="253" selection-start-column="40" selection-end-line="253" selection-end-column="40" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JoinUsNew.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JoinUsNew.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JoinUsNew.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="531">
+              <caret line="124" column="21" lean-forward="false" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -48,8 +44,8 @@
       <file leaf-file-name="joinUsNew.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/joinUsNew.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="358" column="0" lean-forward="true" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
+            <state relative-caret-position="245">
+              <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
               <folding>
                 <element signature="e#3412#3646#2" expanded="true" />
               </folding>
@@ -71,7 +67,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>thanks</find>
       <find>radio</find>
       <find>checkbox</find>
       <find>button</find>
@@ -94,10 +89,14 @@
       <find>situ</find>
       <find>mainInput</find>
       <find>inputGroup</find>
-      <find>right:</find>
       <find>forInputChange</find>
       <find>i al</find>
       <find>5 the d</find>
+      <find>date</find>
+      <find>right:</find>
+      <find>forI</find>
+      <find>for</find>
+      <find>label</find>
     </findStrings>
     <replaceStrings>
       <replace>section</replace>
@@ -115,8 +114,8 @@
         <option value="$PROJECT_DIR$/email.html" />
         <option value="$PROJECT_DIR$/joinUs.scss" />
         <option value="$PROJECT_DIR$/joinUsNew.scss" />
-        <option value="$PROJECT_DIR$/joinUsNew.html" />
         <option value="$PROJECT_DIR$/JoinUsNew.js" />
+        <option value="$PROJECT_DIR$/joinUsNew.html" />
       </list>
     </option>
   </component>
@@ -279,6 +278,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="76c5d0b8-b4f4-4ef5-bfa7-33bbbf9f2592" name="Default" comment="" />
@@ -289,12 +291,12 @@
       <workItem from="1550740657099" duration="5964000" />
       <workItem from="1550749693390" duration="2294000" />
       <workItem from="1550753672019" duration="29176000" />
-      <workItem from="1551085545167" duration="23810000" />
+      <workItem from="1551085545167" duration="27640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61244000" />
+    <option name="totallyTimeSpent" value="65074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="6" />
@@ -343,7 +345,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -351,7 +355,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -399,7 +405,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -419,7 +427,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -454,27 +464,29 @@
     <entry file="file://$PROJECT_DIR$/examples/basic.html" />
     <entry file="file://$PROJECT_DIR$/joinUsNew.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="358" column="0" lean-forward="true" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
           <folding>
             <element signature="e#3412#3646#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/joinUsNew.html">
+    <entry file="file://$PROJECT_DIR$/JoinUsNew.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="22" />
+        <state relative-caret-position="531">
+          <caret line="124" column="21" lean-forward="false" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JoinUsNew.js">
+    <entry file="file://$PROJECT_DIR$/joinUsNew.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="158">
+          <caret line="253" column="40" lean-forward="false" selection-start-line="253" selection-start-column="40" selection-end-line="253" selection-end-column="40" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
