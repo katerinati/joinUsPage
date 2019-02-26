@@ -7,6 +7,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" rel="stylesheet">
+  <link href="./datepicker.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="joinUsNew.css">
   <title>Join Us</title>
 </head>
@@ -19,25 +20,30 @@
       <div class=" simpleAddressSearch bottomMargin section ">
         <h1>Join now and start saving</h1>
         <div class="inputWrapper">
-        <input type="text" data-provide="typeahead" class="form-control" id="typeahead"
-               required/>
-        <span class="label">Your address</span>
+          <input type="text" data-provide="typeahead" class="form-control mainInput" id="typeahead"
+                 required/>
+          <span class="label addressLabel">Your address</span>
         </div>
         <div class="advancedLinkWrapper">
-          <a id='advancedSearchToggle' href="#" data-toggle="modal" data-target="#advancedSearch"
-             role="button" aria-expanded="false">Advanced Search</a>
+          <a id='advancedSearchToggle' href="#advancedSearch" aria-expanded="false" aria-controls="advancedSearch"
+             data-toggle="collapse" data-target="#collapseExample"
+             role="button" aria-expanded="false">
+            <button class="advanceSearchButton" type="button" data-toggle="collapse" data-target="#advancedSearch"
+                    aria-expanded="false" aria-controls="advancedSearch">Address Search
+            </button>
+          </a>
 
-          <div class="modal fade" id="advancedSearch" tabindex="-1" role="dialog"
+          <div class="collapse" id="advancedSearch" tabindex="-1" role="dialog"
+               data-toggle="collapse"
                aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Advanced Search</h5>
+            <div class="form-group" role="document">
+              <div class="form-group">
+                <div class="form-group">
+                  <h5 class="form-group" id="exampleModalLongTitle"></h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
+                <div class="form-group">
                   <div class="advancedAddressSearch bottomMargin ">
                     <div class="row">
                       <div class="col-6">
@@ -69,78 +75,104 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Save</button>
+                  <button type="button" class="btn btn-primary saveButton">Save</button>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
+        <div class="successButtonWrapper">
+          <button class="nextButton" disabled>Next</button>
+        </div>
       </div>
 
 
-      <div class="situationWrapper bottomMargin section mainview" vs-anchor="2view">
-        <h5>What's the situation at 5 THE DRIVE, EPSOM, AUCKLAND 1023?</h5>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="checkBox1">
-          <label class="form-check-label" for="checkBox1">
-            I already have a power company here and want to switch to Lighthouse
+      <div class="situationWrapper bottomMargin section mainview disabledStyle" vs-anchor="2view">
+        <h5>What's the situation at <span class="dataAddress"></span>?</h5>
+        <div class="inputGroup">
+          <input id="option1" name="option1" class="form-check-input" type="radio">
+          <label for="option1">
+            I already have a power company here <br>and want to switch to Lighthouse
           </label>
         </div>
-        <div class="form-check">
+        <div class="calendarWrapper1 hidden">
+          <span for="start">When you would like to switch?</span>
 
-          <input class="form-check-input" type="checkbox" value="" id="checkBox2">
-          <label class="form-check-label" for="checkBox2">
+          <input type="text" class="datepicker-here calendar" data-position="right top">
+
+        </div>
+
+        <div class="inputGroup">
+          <input id="option2" name="option1" class="form-check-input" type="radio">
+          <label for="option2">
             I'm moving in, or I've just moved
           </label>
+
         </div>
+        <div class="calendarWrapper2 hidden">
+          <span for="start2">When you want to start the service?</span>
+
+          <input type="text" class="datepicker-here calendar" data-position="right top">
+        </div>
+
+        <div class="successButtonWrapper">
+          <button class="nextButton" disabled>Next</button>
+        </div>
+
       </div>
 
-      <div class="planWrapper bottomMargin section mainview" vs-anchor="3view">
+
+      <div class="planWrapper bottomMargin section mainview disabledStyle" vs-anchor="3view">
         <h4>Choose the plan that fits your requirements</h4>
         <p class="subtitle">Pay monthly, with no hidden costs or surprises. Cancel your plan at any time with one
           month's notice.</p>
         <div class="row">
 
           <div class="col-6">
-            <div class="card">
-              <div class="card-body">
-                <p>BETA TESTING STANDARD</p>
-                <div class="price">
-                  $10/Month
+              <div class="card">
+                <div class="card-body">
+                  <p>BETA TESTING STANDARD</p>
+                  <div class="price">
+                    $10/Month
+                  </div>
+                  <p>
+                    Pay Membership fee upfront
+                    Great for medium to heavy power users
+                    Pay wholesale cost price for your power and line charges
+                  </p>
                 </div>
-                <p>
-                  Pay Membership fee upfront
-                  Great for medium to heavy power users
-                  Pay wholesale cost price for your power and line charges
-                </p>
               </div>
-              <button class="btn btn-primary">Start</button>
-            </div>
+
+
           </div>
 
           <div class="col-6">
-            <div class="card">
-              <div class="card-body">
+              <div class="card">
+                <div class="card-body">
 
-              <p>BETA TESTING LOW USAGE</p>
-              <div class="price">
-                $0.0125/kWh
+                  <p>BETA TESTING LOW USAGE</p>
+                  <div class="price">
+                    $0.0125/kWh
+                  </div>
+                  <p>
+                    No upfront Membership Fee
+                    Great for low power users
+                    Pay wholesale cost price plus the lighthouse fee above per KWH used
+                  </p>
+                </div>
               </div>
-              <p>
-                No upfront Membership Fee
-                Great for low power users
-                Pay wholesale cost price plus the lighthouse fee above per KWH used
-              </p>
-              </div>
-              <button class="btn btn-primary">Start</button>
-            </div>
+
+
           </div>
+        </div>
+        <div class="successButtonWrapper">
+          <button class="nextButton" disabled>Next</button>
         </div>
 
       </div>
 
-      <div class="personalInfoWrapper bottomMargin section">
+      <div class="personalInfoWrapper bottomMargin section disabledStyle">
         <h4 class="userPersonalInfo ">Tell us a little bit of you</h4>
         <div class="row">
           <div class="col-2">
@@ -156,64 +188,67 @@
           </div>
           <div class="col-5">
             <div class="inputWrapper">
-              <input type="text" class="form-control" required/>
+              <input type="text" class="form-control firstName" required/>
               <span class="label">First Name</span>
             </div>
           </div>
           <div class="col-5">
             <div class="inputWrapper">
-              <input type="text" class="form-control" required/>
+              <input type="text" class="form-control lastName" required/>
               <span class="label">Last Name</span>
             </div>
           </div>
         </div>
 
 
-
         <div class="inputWrapper">
-          <input type="text" class="form-control" required/>
+          <input type="email" class="form-control emailAddress" required/>
           <span class="label">Email address</span>
         </div>
 
-        <p>Is someone at 5 THE DRIVE, EPSOM, AUCKLAND 1023 medically dependent on electricity?</p>
-        <div class="yesNoRadioWrapper">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="yesRadio" id="yesRadio" value="option1" checked>
-            <label class="form-check-label" for="yesRadio">
-              Yes
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="yesRadio" id="noRadio" value="option1" checked>
-            <label class="form-check-label" for="noRadio">
-              No
-            </label>
-          </div>
-        </div>
-        <div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="creditCheckbox">
-            <label class="form-check-label" for="creditCheckbox">
-              I’m ok with you credit checking me*
-            </label>
-          </div>
-        </div>
-        <div>
-          <div class="form-check">
+        <p>Is someone at <span class="dataAddress"></span> medically dependent on electricity?</p>
 
-            <input class="form-check-input" type="checkbox" value="" id="tcCheckbox">
-            <label class="form-check-label" for="tcCheckbox">
-              I accept the Terms & Conditions of being a Lighthouse customer*
-            </label>
-          </div>
+        <div class="inputGroup">
+          <input id="option3" name="option1" class="form-check-input" type="radio">
+          <label for="option3">
+            Yes
+          </label>
+        </div>
+        <div class="inputGroup">
+          <input id="option4" name="option1" class="form-check-input" type="radio">
+          <label for="option4">
+            No
+          </label>
+        </div>
+
+        <div class="inputGroup">
+          <input id="option5" name="option1" class="form-check-input" type="checkbox">
+          <label for="option5">
+            I’m ok with you credit checking me*
+          </label>
+        </div>
+
+        <div class="inputGroup">
+          <input id="option6" name="option1" class="form-check-input" type="checkbox">
+          <label for="option6">
+            I accept the Terms & Conditions of being a Lighthouse customer*
+          </label>
+        </div>
+        <div class="successButtonWrapper">
+          <button class="nextButton" disabled>Next</button>
         </div>
       </div>
-      <div class="phoneNumberWrapper bottomMargin section">
+
+      <div class="phoneNumberWrapper bottomMargin section disabledStyle">
         <p>Please enter your phone number</p>
         <div class="inputWrapper">
           <input type="tel" class="form-control" required/>
           <span class="label">Phone number</span>
         </div>
+        <p>For us it is important to have your correct phone number
+          to have a better communication with you. <br>So please verify your phone number</p>
+        <button class="btn btn-success">Send verification code</button>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <div class="inputWrapper">
           <input type="tel" class="form-control" required/>
           <span class="label">Password</span>
@@ -222,7 +257,7 @@
           <input type="tel" class="form-control" required/>
           <span class="label">Confirm Password</span>
         </div>
-        <button class="btn btn-primary btn-lg submitButton">Submit</button>
+        <button class="btn btn-primary btn-lg submitButton" disabled>Submit</button>
       </div>
 
     </div>
@@ -241,6 +276,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+<script src="./datepicker.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 
 <script src="./JoinUsNew.js" type="text/javascript">

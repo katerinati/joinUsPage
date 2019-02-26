@@ -16,12 +16,12 @@ body {
   body .subtitle {
     font-size: 12px; }
   body .btn {
-    background-color: #0d3a6b !important;
-    border-color: #064a94 !important;
     color: white; }
   body .btn-primary {
     background-color: #0d3a6b !important;
     border-color: #0c5eb7 !important; }
+  body .btn-success {
+    padding: 5px 32px; }
   body .mainWrapper .inputWrapper {
     position: relative;
     margin: 20px 0 35px 0; }
@@ -43,6 +43,11 @@ body {
     color: #2b3b4c;
     top: -21px;
     font-size: 12px; }
+  body .mainWrapper .forInputChange {
+    display: block;
+    color: #2b3b4c;
+    top: -21px;
+    font-size: 12px; }
   body .advancedAddressSearch h4 {
     margin-bottom: 2.8rem; }
   body .submitButtonWrapper {
@@ -60,6 +65,13 @@ body {
     body .advancedLinkWrapper a {
       color: #3f51b5;
       font-weight: 200; }
+    body .advancedLinkWrapper .advanceSearchButton {
+      border: 0;
+      color: #3f51b5 !important;
+      font-weight: 200 !important;
+      text-decoration: underline;
+      outline: none;
+      font-size: 15px; }
   body .price {
     font-size: 30px;
     color: #f88600e0;
@@ -74,5 +86,171 @@ body {
     margin-bottom: 40px; }
   body .situationWrapper div {
     margin-bottom: 20px; }
+  body .situationWrapper .calendar {
+    display: inline;
+    margin-left: 34px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 4px 10px; }
+  body .successButtonWrapper {
+    text-align: center;
+    margin-top: 55px; }
+  body .inputGroup {
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    position: relative; }
+    body .inputGroup label {
+      padding: 12px 12px;
+      width: 100%;
+      display: block;
+      text-align: left;
+      color: #3C454C;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 200ms ease-in;
+      overflow: hidden; }
+      body .inputGroup label:before {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        content: '';
+        background-color: #5562eb;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale3d(1, 1, 1);
+        transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        z-index: -1; }
+      body .inputGroup label:after {
+        width: 32px;
+        height: 32px;
+        content: '';
+        border: 2px solid #D1D7DC;
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+        background-position: 2px 3px;
+        border-radius: 50%;
+        z-index: 2;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all 200ms ease-in; }
+    body .inputGroup input:checked ~ label {
+      color: #fff; }
+      body .inputGroup input:checked ~ label:before {
+        transform: translate(-50%, -50%) scale3d(56, 56, 1);
+        opacity: 1; }
+      body .inputGroup input:checked ~ label:after {
+        background-color: #54E0C7;
+        border-color: #54E0C7; }
+    body .inputGroup input {
+      width: 32px;
+      height: 32px;
+      order: 1;
+      z-index: 2;
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      visibility: hidden; }
+  body .selectPlanLink {
+    text-decoration: none;
+    color: #2b3b4c !important; }
+  body .hidden {
+    display: none; }
+  body .card:not(.selectedCard):hover {
+    background-color: #f9f9f9;
+    cursor: pointer; }
+  body .selectedCard {
+    background-color: #f88600e0; }
+    body .selectedCard .price {
+      color: white; }
+  body .disabledStyle * {
+    color: lightGray !important; }
+  body .nextButton:disabled {
+    background-color: gray !important;
+    border: 1px solid darkgray !important;
+    outline: none; }
+  body .nextButton {
+    background-color: #f88600e0;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    padding: 10px 35px;
+    color: white;
+    font-size: 15px;
+    outline: none; }
+    body .nextButton:hover {
+      cursor: pointer;
+      background-color: #e48107;
+      border: 1px solid #e48107; }
+  body .phoneNumberWrapper .lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px; }
+  body .phoneNumberWrapper .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 32px 32px; }
+  body .phoneNumberWrapper .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #dfc;
+    margin: -3px 0 0 -3px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(1):after {
+    top: 50px;
+    left: 50px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(2):after {
+    top: 54px;
+    left: 45px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(3):after {
+    top: 57px;
+    left: 39px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(4):after {
+    top: 58px;
+    left: 32px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(5):after {
+    top: 57px;
+    left: 25px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(6):after {
+    top: 54px;
+    left: 19px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(7):after {
+    top: 50px;
+    left: 14px; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s; }
+  body .phoneNumberWrapper .lds-roller div:nth-child(8):after {
+    top: 45px;
+    left: 10px; }
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=joinUsNew.css.map */
