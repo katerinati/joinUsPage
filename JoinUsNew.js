@@ -34,7 +34,8 @@ $(document).ready(function () {
 
 
   $('#fullpage').fullpage();
-  $(".nextButton").click(function () {
+  $(".nextButton").click(function (e) {
+    e.preventDefault()
     $.fn.fullpage.moveSectionDown();
   })
 
@@ -105,15 +106,17 @@ $(".saveButton").click(function () {
 
 
 $(".personalInfoForm input").on("change", function () {
-  if($(".firstName").val().length >=3 &&
-    $(".lastName").val().length >=3 &&
-    $(".emailAddress").val().includes("@") &&
-    $("[name=medically]:checked").length > 0 &&
-    $(".personalInfoWrapper .form-check-input")[0].checked &&
-    $(".personalInfoWrapper .form-check-input2")[0].checked) {
-    $(".personalInfoWrapper .nextButton").removeAttr("disabled");
-  }
+  // if($(".firstName").val().length >=3 &&
+  //   $(".lastName").val().length >=3 &&
+  //   $(".emailAddress").val().includes("@") &&
+  //   $("[name=medically]:checked").length > 0 &&
+  //   $(".personalInfoWrapper .form-check-input")[0].checked &&
+  //   $(".personalInfoWrapper .form-check-input2")[0].checked) {
+  // }
+
 })
+$(".personalInfoWrapper .nextButton").removeAttr("disabled");
+
 $(".phoneNumberInput").keypress(function () {
   if($(this).val().length == 9) {
     $(".verificationWrapper").removeClass("hidden");

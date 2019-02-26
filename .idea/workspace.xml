@@ -4,7 +4,6 @@
     <list default="true" id="76c5d0b8-b4f4-4ef5-bfa7-33bbbf9f2592" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JoinUsNew.js" afterPath="$PROJECT_DIR$/JoinUsNew.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/joinUsNew.html" afterPath="$PROJECT_DIR$/joinUsNew.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="joinUsNew.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="joinUsNew.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/joinUsNew.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="253" column="40" lean-forward="false" selection-start-line="253" selection-start-column="40" selection-end-line="253" selection-end-column="40" />
+            <state relative-caret-position="130">
+              <caret line="243" column="6" lean-forward="false" selection-start-line="243" selection-start-column="6" selection-end-line="243" selection-end-column="6" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -31,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JoinUsNew.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JoinUsNew.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JoinUsNew.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="124" column="21" lean-forward="false" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
+            <state relative-caret-position="370">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,8 +113,8 @@
         <option value="$PROJECT_DIR$/email.html" />
         <option value="$PROJECT_DIR$/joinUs.scss" />
         <option value="$PROJECT_DIR$/joinUsNew.scss" />
-        <option value="$PROJECT_DIR$/JoinUsNew.js" />
         <option value="$PROJECT_DIR$/joinUsNew.html" />
+        <option value="$PROJECT_DIR$/JoinUsNew.js" />
       </list>
     </option>
   </component>
@@ -291,12 +290,12 @@
       <workItem from="1550740657099" duration="5964000" />
       <workItem from="1550749693390" duration="2294000" />
       <workItem from="1550753672019" duration="29176000" />
-      <workItem from="1551085545167" duration="27640000" />
+      <workItem from="1551085545167" duration="28178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65074000" />
+    <option name="totallyTimeSpent" value="65612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="6" />
@@ -472,21 +471,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JoinUsNew.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="124" column="21" lean-forward="false" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/joinUsNew.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="253" column="40" lean-forward="false" selection-start-line="253" selection-start-column="40" selection-end-line="253" selection-end-column="40" />
+        <state relative-caret-position="130">
+          <caret line="243" column="6" lean-forward="false" selection-start-line="243" selection-start-column="6" selection-end-line="243" selection-end-column="6" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JoinUsNew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
